@@ -1,0 +1,63 @@
+/* Flexbox to center the content in the body */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Make sure header stays on top */
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+/* Header styles for navigation */
+header {
+    width: 100%; /* Full width header */
+    background-color: #f2f2f2; /* Background color for header */
+}
+
+nav#presmerovanie {
+    display: flex;
+    justify-content: space-around; /* Space links evenly */
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+nav#presmerovanie a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    flex: 1; /* Allow links to grow and fill space */
+    text-align: center; /* Center align text within links */
+}
+
+/* Form styles */
+.inputy {
+    display: flex; /* Use flexbox for the form */
+    flex-direction: column; /* Stack inputs vertically */
+    justify-content: right; /* Align form content */
+    align-items: center;
+    background-color: rgb(182, 218, 218); 
+    width: 800px;
+    padding-bottom:50px ;
+    padding-top: 50px;
+}
+
+/* Input styles */
+input {
+    padding: 20px; /* Padding inside the input */
+    margin-bottom: 20px; /* Space between inputs */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 17px; /* Font size for input text */
+    width: 500px;
+}
+
+/* Button styles */
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
