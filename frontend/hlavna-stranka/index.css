@@ -1,0 +1,329 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#presmerovanie {
+  margin: 0;
+  text-align: center;
+}
+
+#Welcome {
+  text-align: center;
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto; 
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+#vypis {
+  display: flex;
+  justify-content: center; 
+}
+
+
+.buttons {
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+
+#api-form {
+  text-align: center; 
+  padding: 50px;
+  border-radius: 10px; 
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  margin: 0 auto; 
+  width: 30%; 
+}
+
+
+#api-form button, 
+#get-data-button, 
+#callbutton,
+#odhlasitButton,
+#delete-from-databaze {
+  text-align: center; 
+  width: 150px;  
+  height: 45px;   
+  border-radius: 5px;  
+  background-color: #4CAF50;  
+  color: white;  
+  border: none; 
+  cursor: pointer;  
+  font-size: 16px;  
+  margin: 10px;  
+}
+
+ Button hover effect */
+#api-form button:hover,
+#get-data-button:hover,
+#odhlasitButton:hover, 
+#delete-from-databaze:hover {
+  background-color: #45a049;  
+}
+
+.inputy#api-form input {
+  padding: 10px;  
+  margin-bottom: 10px;  
+  border: 1px solid #ccc; 
+  border-radius: 5px;  
+  font-size: 20px; 
+}
+
+.inputy#api-form {
+  background: transparent;
+}
+
+nav#presmerovanie {
+  display: flex;
+  justify-content: space-around;  
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+nav#presmerovanie a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  flex: 1;  
+  text-align: center;  
+}
+
+ Input for vytvaranie-form */
+.form#vytvaranie-form input {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 17px;
+  width: 500px;
+}
+
+ Body for vytvaranie-form */
+.vytvaranie-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+ Form style for vytvaranie-form */
+.form#vytvaranie-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+  background-color: rgb(182, 218, 218);
+  width: 800px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+ Button for prihlasit-sa */
+.button#prihlasit-sa {
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ Input for prihlasenie-form */
+.form#prihlasenie-form input {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 17px;
+  width: 500px;
+}
+
+ Body for prihlasenie-form */
+.prihlasenie-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+ Form style for prihlasenie-form */
+.form#prihlasenie-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+  background-color: rgb(182, 218, 218);
+  width: 800px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.appBody {
+  position: relative;
+  height: 100vh; 
+}
+
+.appBody::before {
+  content: ''; 
+  position: absolute; 
+  width: 100%;  
+  height: 100%;  
+  background-image: url('https://www.elementalhealthcare.co.uk/wp-content/uploads/2023/08/EH_Who_we_are.gif'), 
+                    url('https://img95.lovepik.com/photo/40106/7456.gif_wh860.gif');
+  background-size: 30% 30%, 30% 30%;  
+  background-position: left top, right top;  
+  background-repeat: no-repeat, no-repeat;  
+  opacity: 1; 
+  z-index: 0; 
+}
+
+.appBody > * {
+  position: relative;
+  z-index: 1; 
+}
+
+.hlavna-stranka-popis {
+  text-align: center;
+  font-size: 22px;
+  width: 50%;
+  padding-left: 350px;
+  padding-top: 100px;
+  background-size: auto;
+}
+
+.tableBody {
+  background-color: rgb(235, 239, 239);
+}
+
+#data-table {
+  background-color: rgb(192, 222, 223);
+}
+
+.options-container {
+  display: flex;
+  gap: 10px;
+  padding-left: 450px;
+}
+
+.option-button {
+  padding: 15px 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: white;
+  color: black;
+}
+
+ Styles for the selected button */
+.option-button.selected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.modal, .overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.8);
+}
+
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 20px 34px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+}
+
+
+@media (max-width: 768px) {
+  table {
+    width: 90%;  
+  }
+
+  #api-form {
+    width: 90%; 
+  }
+
+  .option-button {
+    padding: 10px 15px;  
+  }
+
+  .buttons {
+    flex-direction: column; 
+  }
+
+  .hlavna-stranka-popis {
+    padding-left: 20px;  
+    padding-top: 50px; 
+  }
+
+  .inputy#api-form input,
+  .form#vytvaranie-form input,
+  .form#prihlasenie-form input {
+    width: 100%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .hlavna-stranka-popis {
+    font-size: 18px; 
+  }
+
+  #api-form button,
+  #get-data-button,
+  #callbutton,
+  #odhlasitButton,
+  #delete-from-databaze {
+    width: 100%;  
+    height: 40px; 
+  }
+
+  .modal-content {
+    padding: 15px 20px;  
+  }
+}
